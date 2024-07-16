@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambiant Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="music-player">
+      <div class="album-art">
+        <img id="album" src="cover/1.jpg" alt="Album Art" />
+      </div>
+      <div class="song-info">
+        <h2 id="mastersongname">Dilemma</h2>
+        <p id="artistname">Sidhu Moose Wala</p>
+      </div>
+      <div class="controls">
+        <div class="three-btn">
+          <i id="previous" class="fas fa-step-backward"></i>
+          <i id="playbtn" class="fas fa-play-circle"></i>
+          <i id="next" class="fas fa-step-forward"></i>
+        </div>
+        <div class="seekbar">
+          <p id="currentTime"></p>
+          <input type="range" id="seekbar" min="0" max="2000" value="0" />
+          <p id="duration"></p>
+        </div>
+      </div>
+      <div class="song-list">
+        <h2>Song List</h2>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="0"class="listbtn fas fa-play-circle"></i></div>
+        </div>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="1" class="listbtn fas fa-play-circle"></i></div>
+        </div>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="2" class="listbtn fas fa-play-circle"></i></div>
+        </div>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="3" class="listbtn fas fa-play-circle"></i></div>
+        </div>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="4" class="listbtn fas fa-play-circle"></i></div>
+        </div>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="5" class="listbtn fas fa-play-circle"></i></div>
+        </div>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="6" class="listbtn fas fa-play-circle"></i></div>
+        </div>
+        <div class="songdiv">
+          <div class="spandiv">
+            <span class="songName">song 1</span><span> - </span><span class="artist">Artist</span>
+          </div>
+          <div class="btndiv"><i id="7" class="listbtn fas fa-play-circle"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

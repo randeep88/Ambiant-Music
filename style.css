@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+}
+
+.music-player {
+    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.album-art {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.album-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.song-info h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.song-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.three-btn {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.three-btn i {
+    font-size: 30px;
+}
+
+.seekbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.seekbar p {
+    margin: 0 10px;
+}
+
+.seekbar input[type="range"] {
+    width: 70%;
+    accent-color: cornflowerblue;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.song-list {
+    flex: 1;
+    width: 450px;
+    overflow-y: auto;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.song-list h2 {
+    margin-top: 0;
+}
+
+.song-list .songdiv {
+    padding: 10px;
+    height: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.song-list .songdiv:hover {
+    background-color: #f0f0f0;
+}
+
+.songdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btndiv {
+    display: none;
+    margin-right: 10px;
+}
+
+.btndiv i {
+    font-size: 30px;
+}
+
+.songdiv:hover .btndiv {
+    display: block;
+}
